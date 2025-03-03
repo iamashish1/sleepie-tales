@@ -3,9 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sleepie Tales - Personalized Bedtime Stories</title>
+    <style>
+    body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f1ff;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #6a5acd, #836fff);
+    color: white;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #6a5acd;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #6a5acd;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    color: #6a5acd;
+    font-size: 26px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 5px 0;
+    position: relative;
+}
+
+ul li::before {
+    content: "✔";
+    color: #6a5acd;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+footer {
+    background: #6a5acd;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+    </style>
 </head>
 <body>
+    <header>Sleepie Tales</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </nav>
     
+    <div class="container">
+        <h2>Welcome to Sleepie Tales</h2>
+        <p>Personalized bedtime stories where your child is the main character!</p>
+        <p>Simply enter the child's name, select a gender, and browse through a collection of delightful stories.</p>
+        <p>Coming soon: AI-generated stories! Choose a theme and generate a unique bedtime story instantly.</p>
+    </div>
+    
+    <div class="container">
+        <h2>Support</h2>
+        <h3>About Sleepie Tales</h3>
+        <p>Sleepie Tales is an innovative storytelling app that creates personalized bedtime stories for your child. Enter your child’s name and gender to see them as the main character in magical adventures.</p>
+        
+        <h3>How to Use the App?</h3>
+        <ul>
+            <li>Download Sleepie Tales from the App Store.</li>
+            <li>Enter your child’s name and select their gender.</li>
+            <li>Browse and select from a variety of engaging bedtime stories.</li>
+            <li>Coming soon: Generate custom AI-powered stories based on a selected theme!</li>
+        </ul>
+        
+        <h3>Frequently Asked Questions (FAQ)</h3>
+        <p><strong>Q: Is Sleepie Tales free to use?</strong><br>A: Yes, the app offers a selection of free stories. Additional stories may be available as premium content.</p>
+        <p><strong>Q: Can I customize more aspects of the story?</strong><br>A: Currently, you can personalize the name and gender of the character. Future updates will allow more customization options.</p>
+        <p><strong>Q: When will AI-generated stories be available?</strong><br>A: AI-generated stories are coming soon! Stay tuned for updates.</p>
+        
+        <h3>Support Contact</h3>
+        <p>If you need help, feel free to contact us at <a href="mailto:support@sleepietales.com">support@sleepietales.com</a>.</p>
+    </div>
+    
+    <div class="container">
+        <h2>Privacy Policy</h2>
+        <h3>Last Updated: [Date]</h3>
+        <p>Welcome to <strong>Sleepie Tales</strong>! Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our app.</p>
+        
+        <h3>1. Information We Collect</h3>
+        <ul>
+            <li><strong>Personal Information:</strong> When you use Sleepie Tales, you may provide us with the child's name and gender to personalize stories. We do not require account registration.</li>
+            <li><strong>Usage Data:</strong> We don't collect anonymous data on how users interact with the app.</li>
+            <li><strong>AI-Generated Content:</strong> If you use the AI-generated stories feature, your chosen themes may be processed to generate content.</li>
+        </ul>
+        
+        <h3>2. How We Use Your Information</h3>
+        <ul>
+            <li>To personalize bedtime stories based on the child's name and gender.</li>
+            <li>To improve the app and develop new features.</li>
+            <li>To analyze user interactions to enhance the user experience.</li>
+        </ul>
+        
+        <h3>3. Data Storage & Security</h3>
+        <p>We do not store any personal information permanently. All entered data is used only within the app and not shared with third parties. Any analytics data collected is anonymized and used for app improvements.</p>
+        
+        <h3>4. Third-Party Services</h3>
+        <p>We may use third-party tools for analytics, AI-generated stories, or cloud storage. These services have their own privacy policies.</p>
+        
+        <h3>5. Children's Privacy</h3>
+        <p>Sleepie Tales is designed for children, but we do not collect personally identifiable information from them. Parents should supervise children's app usage.</p>
+        
+        <h3>6. Your Rights & Choices</h3>
+        <ul>
+            <li>You can choose not to enter a child’s name and use generic stories.</li>
+            <li>You can contact us to request data deletion if applicable.</li>
+        </ul>
+        
+        <h3>7. Contact Us</h3>
+        <p>If you have any questions about this Privacy Policy, you can contact us at <a href="mailto:iamashishkoirala2.com">support email</a>.</p>
+    </div>
+    
+    <footer>
+        &copy; 2025 Sleepie Tales. All rights reserved.
+    </footer>
 </body>
 </html>
